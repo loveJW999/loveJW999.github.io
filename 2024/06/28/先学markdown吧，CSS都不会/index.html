@@ -79,7 +79,7 @@ red;">这段文字将会是红色</span>（HTML学习也要提上日程了）</l
 <h2 id="粗体和斜体"><a href="#粗体和斜体" class="headerlink" title="粗体和斜体"></a>粗体和斜体</h2><p>粗体在要加粗的内容前后加两个*，斜体只要一个。</p>
 <p>注意：** 符号用于加粗文本，Markdown语法不能加粗！<br>比如~<br><code>粗体： **我变粗了吗**</code><br><code>斜体： *我斜了吗*</code><br>那么它就会显示<br>粗体： <strong>我变粗了吗</strong><br>斜体： <em>我斜了吗</em></p>
 <h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>若要删除内容，请在单词前后使用两个波浪号 <del>。<br>&#96;</del>这句话被删除了<del>&#96;<br>~~这句话被删除了</del></p>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>注意：用一个空格在 # 和标题之间进行分隔.<br><code># 这是大标题</code><br><code>## 这是中标题</code><br><code>### 这是小标题</code><br><code>#### 这是小小标题</code><br><code>##### 这是小小小标题</code><br><code>###### 这是小小小小标题</code><br><img src="/" alt="它们就会显示："></p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>注意：用一个空格在 # 和标题之间进行分隔.<br><code># 这是大标题</code><br><code>## 这是中标题</code><br><code>### 这是小标题</code><br><code>#### 这是小小标题</code><br><code>##### 这是小小小标题</code><br><code>###### 这是小小小小标题</code><br>那么结果就会是这个样子的：<br><img src="/picture/title.png" alt="这是图片"></p>
 <h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>我们用“&gt;”表示引用，不过具体格式在不同的编辑器和网站上差异较大<br>比如~<br><code>&gt; “真正的学者知道怎样从已知引出未知，并且逐步接近于它。” —— 歌德</code><br>结果是这样子滴~</p>
 <blockquote>
 <p>“真正的学者知道怎样从已知引出未知，并且逐步接近于它。” —— 歌德</p>
@@ -91,8 +91,8 @@ red;">这段文字将会是红色</span>（HTML学习也要提上日程了）</l
 <blockquote>
 <p>图片alt：当图片因为某些原因无法显示时（比如图片链接失效、网络问题或用户使用的是屏幕阅读器等辅助技术），alt 文本就会显示出来</p>
 </blockquote>
-<p>比如:<br><code>![这是个美女图片](/Users/fangkeshen/blog/source/picture/OIP-C.jpeg &quot;嘿嘿 好看&quot;)</code><br><img src="/Users/fangkeshen/blog/source/picture/OIP-C.jpeg" alt="这是个美女图片" title="嘿嘿 好看"></p>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>列表分为<strong>有序列表</strong>和<strong>无序列表</strong><br>无序列表的是加一个”-“</p>
+<p>比如:<br><code>![这是个美女图片](/picture/OIP-C.jpeg &quot;嘿嘿 好看&quot;)</code><br><span style="color: red;">注意：(我在这里踩了好久的坑！！！)</span>本地路径问题：如果你的Markdown文件是为了在网页上显示而编写的，那么使用本地文件系统的路径（如&#x2F;Users&#x2F;……&#x2F;blog&#x2F;source&#x2F;picture&#x2F;OIP-C.jpeg）是不正确的。网页上的图片路径需要是相对于网站根目录的路径，或者是一个完整的URL。如果你的图片已经上传到了网站的服务器，你应该使用服务器上的相对路径或URL。<br><code>![这是个美女图片](/picture/OIP-C.jpeg &quot;嘿嘿 好看&quot;)</code><br><img src="/picture/OIP-C.jpeg" alt="这是个美女图片" title="嘿嘿 好看"></p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>列表分为<strong>有序列表</strong>和<strong>无序列表</strong><br><em>无序列表</em>的是加一个”-“<br><code>- a</code><br><code>- b</code><br><code>  - b1</code><br><code>  - b2</code><br><code>- c</code><br>显示的结果就会是：</p>
 <ul>
 <li>a</li>
 <li>b<ul>
@@ -100,8 +100,9 @@ red;">这段文字将会是红色</span>（HTML学习也要提上日程了）</l
 <li>b2</li>
 </ul>
 </li>
-<li>c<br>有序列表就简单了</li>
+<li>c</li>
 </ul>
+<p><em>有序列表</em>就简单了<br><code>1. a</code><br><code>2. b</code><br><code>3. c</code><br>显示的是：</p>
 <ol>
 <li>a</li>
 <li>b</li>
