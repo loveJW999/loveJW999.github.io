@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>先学markdown吧，CSS都不会，改什么样式！ | Xiao FANG</title>
+  
+  
+  
+  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+<div class="Shell">
+    <aside class='SideBar'>
+    <section class='avatar' style="background-image: url(/assets/pic2.png)">
+        <div class='av-pic' style="background-image: url(/assets/pic1.png)">
+        </div>
+    </section>
+    <section class='menu'>
+        <div>Xiao FANG</div>
+        
+        <ul>
+          
+            <a href="/" class="Btn">
+              <li>Home</li>
+            </a>  
+          
+            <a href="/archives/" class="Btn">
+              <li>Archive</li>
+            </a>  
+          
+            <a href="/tags/" class="Btn">
+              <li>Tags</li>
+            </a>  
+          
+            <a href="/categories/" class="Btn">
+              <li>Categories</li>
+            </a>  
+          
+            <a href="/about/" class="Btn">
+              <li>About</li>
+            </a>  
+          
+        </ul>
+    </section>
+    <section class="media">
+        
+    </section>
+</aside>
+
+    <div class="container">
+        <div data-pager-shell>
+            <div>
+  <article class='ContentView'>
+    <header class='PageTitle'>
+        <h1>先学markdown吧，CSS都不会，改什么样式！</h1>
+    </header>
+
+    <section>
+      <p>本来我想写一篇关于<span 
+style="color: 
+blue;">“如何修改Hexo主题，设成自己喜欢的样式~”</span>的blog（上一篇文章）。但当我看到.styl的源码时才发现，哦~CSS没学过，还不太能改这配置嘞。所以俺这个小废物就只能改了个头像和名字。<br>但是！！！拿不下CSS,我还不能用markdown写篇博客？？？<br>于是，我写了这篇文章，主要是做个笔记给自己看，还有锻炼一下自己~</p>
+<span id="more"></span>
+
+<p>开始之前需要有几个注意事项：</p>
+<ol>
+<li>要创建段落，请使用空白行将一行或多行文本进行分隔。</li>
+<li>Markdown 本身并不直接支持改变文字颜色或其他排版细节如字体和大小。Markdown的设计初衷是保持文本的简洁性和易读性，重点在于结构化内容而不是样式。然而，如果你需要在Markdown文档中改变文字颜色，可以借助内嵌HTML的方式来实现。由于许多Markdown解析器也支持HTML代码，你可以使用HTML的<span>标签配合style属性来改变文字颜色，例如：<code>&lt;span style=&quot;color: red;&quot;&gt;这段文字将会是红色&lt;/span&gt;</code>。于是它就变成这样：<span style="color: 
+red;">这段文字将会是红色</span>（HTML学习也要提上日程了）</li>
+</ol>
+<h2 id="粗体和斜体"><a href="#粗体和斜体" class="headerlink" title="粗体和斜体"></a>粗体和斜体</h2><p>粗体在要加粗的内容前后加两个*，斜体只要一个。</p>
+<p>注意：** 符号用于加粗文本，Markdown语法不能加粗！<br>比如~<br><code>粗体： **我变粗了吗**</code><br><code>斜体： *我斜了吗*</code><br>那么它就会显示<br>粗体： <strong>我变粗了吗</strong><br>斜体： <em>我斜了吗</em></p>
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>若要删除内容，请在单词前后使用两个波浪号 <del>。<br>&#96;</del>这句话被删除了<del>&#96;<br>~~这句话被删除了</del></p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>注意：用一个空格在 # 和标题之间进行分隔.<br><code># 这是大标题</code><br><code>## 这是中标题</code><br><code>### 这是小标题</code><br><code>#### 这是小小标题</code><br><code>##### 这是小小小标题</code><br><code>###### 这是小小小小标题</code><br><img src="/" alt="它们就会显示："></p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>我们用“&gt;”表示引用，不过具体格式在不同的编辑器和网站上差异较大<br>比如~<br><code>&gt; “真正的学者知道怎样从已知引出未知，并且逐步接近于它。” —— 歌德</code><br>结果是这样子滴~</p>
+<blockquote>
+<p>“真正的学者知道怎样从已知引出未知，并且逐步接近于它。” —— 歌德</p>
+</blockquote>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>那作为敲键盘的牛马，代码怎么显示呢？<br>这里有两种方法：<strong>行内代码</strong>和<strong>代码块</strong></p>
+<p>行内代码需要使用` `是这样的`int a &#x3D; 10; float b &#x3D; 0.1f`</p>
+<p>代码块需要```  ```框定起来<br>显示是这样的~<br><code>int a = 10;</code><br><code>int b = 20;</code><br><code>int c = a + b;</code></p>
+<h2 id="链接和图片"><a href="#链接和图片" class="headerlink" title="链接和图片"></a>链接和图片</h2><p>插入图片Markdown语法代码:<code>![图片alt](图片链接 &quot;图片title&quot;)</code></p>
+<blockquote>
+<p>图片alt：当图片因为某些原因无法显示时（比如图片链接失效、网络问题或用户使用的是屏幕阅读器等辅助技术），alt 文本就会显示出来</p>
+</blockquote>
+<p>比如:<br><code>![这是个美女图片](//Users/fang/blog/source/OIP-C.jpeg  &quot;嘿嘿 好看&quot;)</code><br><img src="//Users/fang/blog/source/OIP-C.jpeg" alt="这是个美女图片" title="嘿嘿 好看"></p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>列表分为<strong>有序列表</strong>和<strong>无序列表</strong><br>无序列表的是加一个”-“</p>
+<ul>
+<li>a</li>
+<li>b<ul>
+<li>b1</li>
+<li>b2</li>
+</ul>
+</li>
+<li>c<br>有序列表就简单了</li>
+</ul>
+<ol>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+</ol>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>表格我有点累，不想弄了，看这里吧<br><a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown官方教程</a></p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>想要在两行之间加入分割线，最简单的方法就是：新起一行输入***<br>比如~<br><code>abcdefghijklmnopqrstuvwxyz</code><br><code>***</code><br><code>abcdefghijklmnopqrstuvwxyz</code><br>结果就会在两行abc中间加一条分割线<br>abcdefghijklmnopqrstuvwxyz</p>
+<hr>
+<p>abcdefghijklmnopqrstuvwxyz</p>
+<h2 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h2><p>要显示原本用于格式化 Markdown 文档的字符，请在字符前面添加反斜杠字符 \ 。<br>当我们使用 <code>\&gt;hello world</code> 时<br>&gt;hello world  此时引用符号无效了。</p>
+<h2 id="待办事项"><a href="#待办事项" class="headerlink" title="待办事项"></a>待办事项</h2><p>我们使用- [ ] 来创建待办事项，做了哪个就在哪个框子里面画叉号<br>比如：<br><code>- [ ] 好好学习</code><br><code>- [x] 天天睡觉</code><br>它的显示结果就是这样的：</p>
+<ul>
+<li><input disabled="" type="checkbox"> 好好学习</li>
+<li><input checked="" disabled="" type="checkbox"> 天天睡觉</li>
+</ul>
+<p><span style="color: red;">最后，也是最重要的，由于 Markdown 本质上是 HTML 的一种别名，那么在 Markdown 中直接书写 HTML<br>就成了非常自然的事情。</span></p>
+<p>参考内容：<br><a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown官方教程</a></p>
+<p><a target="_blank" rel="noopener" href="https://sspai.com/post/56616#!">Markdown：怎么用，以及为什么用</a></p>
+
+
+      
+
+    </section>
+    
+      <section class='ArticleMeta'>
+          <div>
+            发布于&nbsp;
+            <time datetime="2024-06-28T03:07:54.000Z" itemprop="datePublished">
+              2024-06-28
+            </time>
+          </div>
+          
+            <div>
+              tags: 
+  <li class="meta-text">
+  { <a href="/tags/markdown/">markdown</a> }
+  </li>
+
+
+            </div>
+          
+      </section>
+    
+    
+</article>
+
+  
+</div>
+
+            <footer>
+    <div>© 2024 - FANG  , CC BY-NC-SA 4.0 </div>
+    <div>
+        <span>
+            Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+        </span>
+        ,
+        <span>
+            Theme - <a target="_blank" rel="noopener" href="https://github.com/nameoverflow/hexo-theme-icalm">Icalm</a>
+        </span>
+    </div>
+</footer>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/pager/dist/singlepager.js"></script>
+
+<script>
+var sp = new Pager('data-pager-shell')
+
+</script>
+</body>
+</html>
