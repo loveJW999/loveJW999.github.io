@@ -716,9 +716,13 @@ blockquote {
 .avatar {
   height: 180px;
   background-color: #333;
+  background-image: url("../../assets/header.png");
   position: absolute;
   width: 100%;
   top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .av-pic {
   display: block;
