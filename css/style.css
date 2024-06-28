@@ -22,6 +22,12 @@ html {
 
 body {
   margin: 0;
+  background-color: #f8f8f8; /* 你想要的背景颜色 */
+  background-image: url('R.jpeg'); /* 背景图片路径 */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* 如果你想要背景图片固定不动 */
+  background-position: center center; /* 背景图片居中 */
 }
 
 /**
