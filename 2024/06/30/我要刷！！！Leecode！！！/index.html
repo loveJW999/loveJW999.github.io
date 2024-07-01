@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我要刷！！！Leecode！！！ | Xiao FANG</title>
+  
+  
+  
+  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+<div class="Shell">
+    <aside class='SideBar'>
+    <section class='avatar' style="background-image: url(/assets/pic2.png)">
+        <div class='av-pic' style="background-image: url(/assets/pic1.png)">
+        </div>
+    </section>
+    <section class='menu'>
+        <div>Xiao FANG</div>
+        
+        <ul>
+          
+            <a href="/" class="Btn">
+              <li>Home</li>
+            </a>  
+          
+            <a href="/archives/" class="Btn">
+              <li>Archive</li>
+            </a>  
+          
+            <a href="/tags/" class="Btn">
+              <li>Tags</li>
+            </a>  
+          
+            <a href="/categories/" class="Btn">
+              <li>Categories</li>
+            </a>  
+          
+            <a href="/about/" class="Btn">
+              <li>About</li>
+            </a>  
+          
+        </ul>
+    </section>
+    <section class="media">
+        
+    </section>
+</aside>
+
+    <div class="container">
+        <div data-pager-shell>
+            <div>
+  <article class='ContentView'>
+    <header class='PageTitle'>
+        <h1>我要刷！！！Leecode！！！</h1>
+    </header>
+
+    <section>
+      <p>我！一定要每天做一道算法题！<br>加油！！！加油！！！<br>一杯茶，一根烟，一道力扣写一天。</p>
+<span id="more"></span>
+<h3 id="第一天-6-30"><a href="#第一天-6-30" class="headerlink" title="第一天 6-30"></a>第一天 6-30</h3><p><strong>1.两数之和</strong></p>
+<blockquote>
+<p>给定一个整数数组nums和一个整数目标值target，请你在该数组中找出和为目标值<br>target 的那两个整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。<br>你可以按任意顺序返回答案。</p>
+</blockquote>
+<p><strong>答案</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public int[] twoSum(int[] nums, int target) &#123;</span><br><span class="line">        int[] position = new int[2];</span><br><span class="line">        for(int i = 0; i&lt;nums.length-1;i++)&#123;</span><br><span class="line">            for(int j = i+1; j&lt;nums.length;j++)&#123;</span><br><span class="line">                if(nums[i] + nums[j] == target)&#123;</span><br><span class="line">                    position[0] = i;</span><br><span class="line">                    position[1] = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return position;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="第二天-7-1"><a href="#第二天-7-1" class="headerlink" title="第二天 7-1"></a>第二天 7-1</h3><p><strong>回文数</strong><br>给你一个整数 x ，如果 x 是一个回文整数，返回 true ；否则，返回 false 。<br>回文数<br>是指正序（从左向右）和倒序（从右向左）读都是一样的整数。<br>例如，121 是回文，而 123 不是。<br><strong>答案</strong><br>将不好比较的数字，变成String，以middle为中，用charAt来前后比较</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public boolean isPalindrome(int x) &#123;</span><br><span class="line">        if(x&lt;0)&#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line">        String y = x + &quot;&quot;;</span><br><span class="line">        int length  = y.length();</span><br><span class="line">        int middle = length / 2;</span><br><span class="line">        int low  = 0;</span><br><span class="line">        for(int i = 0; i&lt;middle;i++)&#123;</span><br><span class="line">            if(y.charAt(i) !=y.charAt(length-i-1))&#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="第三天-7-2"><a href="#第三天-7-2" class="headerlink" title="第三天 7-2"></a>第三天 7-2</h3><p><strong>目标和</strong><br>给你一个非负整数数组 nums 和一个整数target。<br>向数组中的每个整数前添加 ‘+’ 或 ‘-‘ ，然后串联起所有整数，可以构造一个表达式：<br>例如，nums &#x3D; [2, 1] ，可以在 2 之前添加 ‘+’ ，在 1 之前添加’-‘ ，然后串联起来得到表达式 “+2-1” 。<br>返回可以通过上述方法构造的、运算结果等于 target 的不同表达式的数目。<br>**<em>答案</em></p>
+
+
+      
+
+    </section>
+    
+      <section class='ArticleMeta'>
+          <div>
+            发布于&nbsp;
+            <time datetime="2024-06-30T14:32:06.000Z" itemprop="datePublished">
+              2024-06-30
+            </time>
+          </div>
+          
+            <div>
+              tags: 
+  <li class="meta-text">
+  { <a href="/tags/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">算法与数据结构</a> }
+  </li>
+
+
+            </div>
+          
+      </section>
+    
+    
+</article>
+
+  
+</div>
+
+            <footer>
+    <div>© 2024 - FANG  , CC BY-NC-SA 4.0 </div>
+    <div>
+        <span>
+            Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+        </span>
+        ,
+        <span>
+            Theme - <a target="_blank" rel="noopener" href="https://github.com/nameoverflow/hexo-theme-icalm">Icalm</a>
+        </span>
+    </div>
+</footer>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/pager/dist/singlepager.js"></script>
+
+<script>
+var sp = new Pager('data-pager-shell')
+
+</script>
+</body>
+</html>
